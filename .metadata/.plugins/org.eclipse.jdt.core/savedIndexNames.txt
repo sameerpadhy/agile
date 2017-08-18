@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+C:\Users\admin\agile\.metadata\.plugins\org.eclipse.jdt.core
+1500549298.index
+2350506081.index
+1769093953.index

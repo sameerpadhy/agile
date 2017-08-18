@@ -1,0 +1,50 @@
+package com.sameer.demo1;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Test;
+import org.junit.runners.Parameterized.Parameters;
+
+import junit.framework.Assert;
+
+
+public class PalindromeTest {
+	@Test
+	public void TestValidStringPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("MADAM");
+		Assert.assertEquals(trueValue, true);
+		
+	}
+	
+	@Test
+	public void TestValiIntegerdPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("141");
+		Assert.assertEquals(trueValue, true);
+		
+	}
+	
+	@Test
+	public void TestInValiIntegerdPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("42");
+		Assert.assertEquals(trueValue, false);
+		
+	}
+	
+	@Test
+	public void TestInInValiStringdPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("SIr");
+		Assert.assertEquals(trueValue, false);
+		
+	}
+	
+	@Parameters
+	public static Collection<Object[]> data(){
+		return Arrays.asList(new Object[][] {{"MADAM",true},{"141",false}});
+	}
+
+}

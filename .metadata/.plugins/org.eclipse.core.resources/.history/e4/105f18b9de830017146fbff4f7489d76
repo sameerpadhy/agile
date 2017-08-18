@@ -1,0 +1,33 @@
+package com.sameer.demo1;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+
+public class PalindromeTest {
+	@Test
+	public void TestValidStringPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("MADAM");
+		Assert.assertEquals(trueValue, true);
+		
+	}
+	
+	@Test
+	public void TestValiIntegerdPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("141");
+		Assert.assertEquals(trueValue, true);
+		
+	}
+	
+	@Test
+	public void TestInValiIntegerdPalindrome() {
+		Palindrome palindrome=new Palindrome();
+		boolean trueValue=palindrome.testPallindrome("141");
+		Assert.assertEquals(trueValue, true);
+		
+	}
+
+}
